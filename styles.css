@@ -1,0 +1,556 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+*{
+    font-family: 'Open Sans', sans-serif;
+    color: rgb(50,54,68);
+}
+
+header{
+    position: static;
+    display: grid;
+    height: auto;
+    width: 100%;
+    min-height: auto;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr;
+}
+a:hover {
+	color: rgb(118,156,205);
+    font-weight: bold;
+}
+input::placeholder{
+    color: rgb(147,150,162);
+}
+input, textarea{
+    color: #fff;
+    border: 1px solid rgb(147,150,162);
+}
+input:focus, textarea:focus{
+    background-color: rgb(41, 41, 41);
+    color: rgb(255, 255, 255);
+}
+
+.logo{
+    position: relative;
+    margin: 24px 0px 21px 15%;
+    width: 25px;
+    height: 45px;
+    grid-area: 1 / 1 / 2 / 2;
+    fill:#323644;
+}
+
+.title{
+    margin: 24px 0px 21px calc(15% + 40px);
+    padding: 0px;
+    grid-area: 1 / 1 / 2 / 2;
+    
+}
+
+.title h1{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Open Sans', sans-serif;
+    font-size:21px;
+}
+.title a{
+    text-decoration: none;
+    color: #000;
+}
+#colton{
+    margin-top: -20px;
+}
+.navigation{
+    position: relative;
+    margin: 24px 0px 21px 55%;
+    grid-area: 1 / 1 / 2 / 2;
+    justify-self: start;
+    align-self: start;
+}
+
+nav{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+}
+nav li{
+    display: inline-block;
+    margin-left: 20px;
+}
+nav a{
+    text-decoration: none;
+    color: #000;
+}
+
+body{
+    margin: 0px;
+    padding: 0px;
+    min-width: 880px;
+}
+/* banner */
+
+ .banner{
+    display: grid;
+    background-image: url("imagenes/residence2.jpg");
+    background-attachment: fixed;
+    background-size:cover;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr;
+}
+
+.banner h3{
+    margin: 0px;
+    font-size: 60px;
+    font-weight: bold;
+}
+.banner-title {
+    margin-left: 15%;
+    margin-top: 5%;
+}
+
+#banner-price{
+    color: rgb(181, 213, 255);
+    font-size: 20px;
+    font-weight: bold;
+    margin-left: 15%;
+}
+
+#banner-text{
+    color: rgb(50,54,68);
+    font-size: 16px;
+    margin-left: 15%;
+    font-weight: bold;
+    
+}
+#link{
+    width: 150px;
+    border: 1px solid rgb(0, 0, 0);
+    height: 45px;
+    color: #000;
+    font-size: 14px;
+    display: flex;
+    font-weight: bolder;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    cursor: pointer!important;
+}
+#banner-button{
+    margin-left: 15%;
+    margin-top: 3%;
+    margin-bottom: 5%;
+    
+}
+/* Properties for sale*/
+ 
+.sale{
+    background: rgb(240, 240, 240);
+    display: grid;
+    grid-template-rows: min-content 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr ;
+    grid-gap: 2%;
+}
+
+.sale h2{
+    letter-spacing: 0.05em;
+    font-weight: bold;
+    font-size: 30px;
+    text-align: center;
+    grid-area: 1 / 1 / 2 / 3;
+} 
+/* Casa 1 */
+.sale-hause1{
+    grid-area: 2 / 1 / 3 / 2;
+    text-align: right;
+}
+.sale-hause1-text{
+    grid-area: 2 / 2 / 3 / 3;
+    display: grid;
+    grid-template-rows: min-content 1fr 1fr;
+    grid-template-columns: 1fr;
+    width: 50%;
+    font-size: 17px;
+    text-align: justify;
+    margin-left: 10%;
+}
+.sale-hause1-text h4{
+    margin:0px;
+    font-size: 60px;
+    grid-area: 1 / 1 / 2 / 2;
+}
+.sale-hause1-information {
+    grid-area: 2 / 1 / 3 / 2;
+}
+#paragraph-hause1{
+    margin-top: 18%;
+}
+#bedrooms-hause1{
+    font-weight: bold;
+    color: #000;
+}
+#price-hause1{
+    color: rgb(118,156,205);
+    font-weight: bold;
+    font-size: 20px;
+    margin-top: -1%;
+}
+/* Casa 2 */
+.sale-hause2{
+    grid-area: 3 / 2 / 4 / 3;
+    text-align: left;
+}
+.sale-hause2-text{
+    grid-area: 3 / 1 / 4 / 2;
+    display: grid;
+    grid-template-rows: min-content 1fr 1fr;
+    grid-template-columns: 1fr;
+    width: 50%;
+    font-size: 17px;
+    text-align: justify;
+    margin-left: 38%;
+}
+.sale-hause2-text h4{
+    margin:0px;
+    font-size: 60px;
+    grid-area: 1 / 1 / 2 / 2;
+}
+.sale-hause2-information {
+    grid-area: 2 / 1 / 3 / 2;
+}
+#paragraph-hause2{
+    margin-top: 15%;
+}
+#bedrooms-hause2{
+    font-weight: bold;
+    color: #000;
+}
+#price-hause2{
+    color: rgb(118,156,205);
+    font-weight: bold;
+    font-size: 20px;
+    margin-top: -1%;
+}
+
+/* Casa 3 */
+.sale-hause3{
+    grid-area: 4 / 1 / 5 / 2;
+    text-align: right;
+}
+.sale-hause3-text{
+    grid-area: 4 / 2 / 5 / 3;
+    display: grid;
+    grid-template-rows: min-content 1fr 1fr;
+    grid-template-columns: 1fr;
+    width: 50%;
+    font-size: 17px;
+    text-align: justify;
+    margin-left: 10%;
+}
+.sale-hause3-text h4{
+    margin:0px;
+    font-size: 60px;
+    grid-area: 1 / 1 / 2 / 2;
+}
+.sale-hause3-information {
+    grid-area: 2 / 1 / 3 / 2;
+}
+#paragraph-hause3{
+    margin-top: 15%;
+}
+#bedrooms-hause3{
+    font-weight: bold;
+    color: #000;
+}
+#price-hause3{
+    color: rgb(118,156,205);
+    font-weight: bold;
+    font-size: 20px;
+    margin-top: -1%;
+}
+
+.rental{
+    display: grid;
+    grid-template-rows: min-content 1fr 1fr 1fr 1fr;
+    grid-template-columns: min-content min-content;
+    grid-gap:2%;
+    justify-content: center;
+}
+
+.rental-title{
+    grid-area: 1 / 1 / 2 / 3;
+    text-align: center;
+    margin-top: 6%;
+    letter-spacing: 0.05em;
+    font-weight: bold;
+    font-size: 30px;
+}
+
+.rental-img1{
+    grid-area: 2 / 1 / 3 / 2;
+    
+}
+.rental-text1{
+    grid-area: 3 / 1 / 4 / 2;
+    font-weight: bolder;
+}
+
+.rental-img2{
+    grid-area: 2 / 2 / 3 / 3;
+}
+.rental-text2{
+    grid-area: 3 / 2 / 4 / 3;
+    font-weight: bolder;
+}
+
+.rental-img3{
+    grid-area: 4 / 1 / 5 / 2;
+}
+.rental-text3{
+    grid-area: 5 / 1 / 6 / 2;
+    font-weight: bolder;
+}
+
+.rental-img4{
+    grid-area: 4 / 2 / 5 / 3;
+}
+.rental-text4{
+    grid-area: 5 / 2 / 6 / 3;
+    font-weight: bolder;
+}
+
+#rental-paragraph1, #rental-paragraph2, #rental-paragraph3, #rental-paragraph4 {
+    text-align: justify;
+    font-weight:200;
+}
+
+.rental a{
+    text-decoration: none;
+    font-size:25px;
+}
+.rental-price{
+    color: rgb(118,156,205);
+    font-weight: bold;
+    font-size: 20px;
+}
+span::after {
+	content: '';
+	display: block;
+	width: 25%;
+	height: 1px;
+	background: #000000;
+	text-align: center;
+	margin-top: 15px;
+} 
+
+/*  MARMOL */
+
+.marmol{
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    width: 65%;
+    align-content: center;
+    margin-left: 17%;
+}
+.marmol-title{
+    font-weight: bold;
+    line-height: 1.2em;
+    font-size: 50px;
+    letter-spacing: normal;
+    grid-area: 1/1/2/2;
+    background: rgb(240, 240, 240);
+    letter-spacing: normal;
+}
+
+.marmol-title h4{
+    margin:3%; 
+}
+
+.marmol-object1{
+    grid-area: 1/2/2/3;
+    width: 80%;
+}
+.marmol-object2{
+    grid-area: 2/1/3/2;
+    width: 80%;
+}
+.marmol-object3{
+    background: rgb(240, 240, 240);
+}
+.object1{
+    margin:15% 15% 15% 20%;
+}
+.object2{
+    margin:15% 15% 15% 20%;
+}
+.object3{
+    margin:15% 15% 15% 20%;
+}
+
+/*OPINIONS */
+
+.opinions{
+    display: grid;
+    background-image: url("imagenes/beach2.jpg");
+    background-attachment: fixed;
+    background-size:cover;
+    grid-template-rows: min-content 1fr 1fr;
+    grid-template-columns:  1fr 1fr 1fr 1fr 1fr;
+    grid-gap:5%;
+}
+
+.opinions h2{
+    color: rgb(255, 255, 255);
+    margin-top: 5%;
+    font-weight: bolder;
+    grid-area: 1/2/2/5;
+    text-align: center;
+}
+.opinion{
+    color: rgb(240, 240, 240);
+}
+
+.comment1{
+    grid-area: 2/2/3/3;
+    text-align: center;
+    font-size: 18px;
+}
+.comment2{
+    grid-area: 2/3/3/4;
+    text-align: center;
+    font-size: 18px;
+}
+.comment3{
+    text-align: center;
+    grid-area: 2/4/3/5;
+    font-size: 18px;
+}
+.name{
+    color: rgb(136, 180, 236);
+}
+
+/*footer*/
+footer{
+    
+    background-color: #323644;
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-gap:3%;
+}
+
+footer div p{
+    color: rgb(147,150,162);
+   
+}
+
+footer div input{
+    background-color: #323644;
+    border-top: 1px solid rgb(147,150,162);
+    margin-top: 15px;
+}
+footer div textarea{
+    background-color: #323644;
+    border-top: 1px solid rgb(147,150,162);
+    margin-top: 15px;
+}
+
+.contact-text1{
+    grid-area: 2/2/3/5;
+    font-size: 18px;
+    font-weight: bolder;
+}
+.contact-text2{
+    grid-area: 3/2/4/3;
+}
+.contact-text3{
+    grid-area: 3/3/4/4;
+}
+.contact-text4{
+    grid-area: 4/2/5/4;
+}
+.contact-text5{
+    font-size: 18px;
+    font-weight: bolder;
+    grid-area: 2/5/3/6;
+}
+.formulario{
+    grid-area: 3/5/4/6;
+}
+form{
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    grid-gap:5%;
+}
+.formulario1{
+    grid-area: 1/1/4/2;
+}
+.formulario2{
+    grid-area: 1/2/4/3;
+}
+.formulario2 textarea{
+    height: 82%;
+}
+#send{
+    background: transparent;
+    color: #fff;
+    cursor: pointer;
+}
+.agents-container{
+    display: grid;
+    background-image: url("imagenes/beach2.jpg");
+    background-attachment: fixed;
+    background-size:cover;
+    grid-template-rows: min-content 1fr 150px;
+    grid-template-columns:  1fr 1fr 1fr 1fr 1fr;
+    grid-gap: 5%;
+}
+
+.agents-container h2{
+    color: rgb(255, 255, 255);
+    margin-top: 5%;
+    font-weight: bolder;
+    grid-area: 1/2/2/5;
+    text-align: center;
+}
+
+.agents1{
+    grid-area: 2/2/3/3;
+    text-align: center;
+    font-size: 18px;
+    background:#fff;
+}
+.agents2{
+    grid-area: 2/3/3/4;
+    text-align: center;
+    font-size: 18px;
+    background:#fff;
+}
+.agents3{
+    text-align: center;
+    grid-area: 2/4/3/5;
+    font-size: 18px;
+    background:#fff;
+}
+
+.name-agent{
+    text-align: left;
+    font-size: 25px;
+    font-weight: bold;
+    margin-left: 8%;
+}
+
+.rol{
+    font-size: 18px;
+    text-align: left;
+    margin-left: 8%;
+    font-weight: bold;
+    color: rgb(136, 180, 236);
+}
+
+.agent-text{
+    font-size: 17px;
+    text-align: left;
+    margin-left: 8%;
+    font-weight: bold;
+}
